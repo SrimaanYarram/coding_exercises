@@ -1,0 +1,22 @@
+1. HashMap : 
+   Allows duplicates (overrides)
+   Using Iterator, For Each,
+   Map.Entry<String, String> m = map.entrySet();
+   Iterator <Map.Entry<String, String>> k = map.keySet().iterator;
+   
+ Understanding how HashMap works 
+ 
+ 	Use a technique called Hashing.
+ 	Hashing Helps in faster indexing and lookups.
+ 	In Java each and every class has hashCode() as all class inherits (Object class).
+ 	You need to have robust hashcode and equals methods. Since they work hand to hand.
+ 	HashMap<K,V> extends AbstractMap implements Clonable, Serializable.
+ 	HashMap has array Node<K,V>[] table;
+ 	Node<K,V> int hash, K key, V value, Node <K,V> next;
+ 	Each Node (Bucket) is an array of Linked List
+ 	HashMap comes by a table of 16
+ 	While put in hashmpa first we compute the hashcode and then module for the index
+ 	While get in hashmap first we call again hashcode and then module for the index
+ 	  Then we go to the index then we compare hashcode and then for the comparing the key we use equals() method
+ 	If the linked list size become 8 then it takes balance tree in Java 8
+ 	

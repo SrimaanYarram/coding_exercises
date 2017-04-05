@@ -1,0 +1,10 @@
+About List : Subtype of Collection all methods in the collection interface are alos available in the List interface.
+Since List is an interface you need to instantiate a concrete implementation of the interface in order to use it.
+
+List Implementation 
+   java.util.ArrayList
+   java.util.LinkedList
+   java.util.Vector
+   java.util.Stack
+   
+ 
