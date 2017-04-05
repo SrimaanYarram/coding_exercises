@@ -1,5 +1,4 @@
 Hello Test
 
-
 Merge conflicts should come now
 How would you fix this
