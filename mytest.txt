@@ -1,4 +1,4 @@
 Hello Test
-
+sometext goes here
 Merge conflicts should come now
 How would you fix this
