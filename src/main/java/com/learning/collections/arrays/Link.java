@@ -4,7 +4,6 @@ public class Link {
 
 	// Set to public so getters & setters aren't needed
 	
-	
 	public String bookName;
 	public int millionsSold;
 	

@@ -7,8 +7,6 @@ public class ParseInt {
 			char di = '5';
 			int a = di-'0';
 			System.out.println(a);
-			
-		
 			String str = "451";
 		    int answer = 0, factor = 1;
 		    for (int i = str.length()-1; i >= 0; i--) {

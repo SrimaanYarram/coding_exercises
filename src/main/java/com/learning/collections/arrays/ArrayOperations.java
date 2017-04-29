@@ -23,7 +23,7 @@ public class ArrayOperations {
 	public void deleteValueAtIndex(int index){
 		
 		for(int i=index;i<array.length-1;i++){
-			 
+			
 			array[i]=array[i+1];
 			
 			

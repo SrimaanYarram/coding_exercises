@@ -12,7 +12,7 @@ class LinkList{
 		// Here to show the first Link always starts as null
 		
 		firstLink = null;
-		 
+		
 	}
 	
 	// Returns true if LinkList is empty

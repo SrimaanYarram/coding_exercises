@@ -10,9 +10,7 @@ public class IteratingHashMapExamples {
 	
 	@Test
 	public void iteratingOverKeysAndValuesUsingForEach(){
-		
 		Map<Integer, String> map = new HashMap<Integer, String>();
-		
 		map.put(18, "Charming");
 		map.put(19, "Young & Charming");
 		map.put(20, "Young");
@@ -36,15 +34,12 @@ public class IteratingHashMapExamples {
 	
 	@Test
 	public void iteratingOverEntriesUsingForEach(){
-		
 		Map<Integer, String> map = new HashMap<Integer, String>();
-		
 		map.put(18, "Charming");
 		map.put(19, "Young & Charming");
 		map.put(20, "Young");
 		map.put(25, "Youth");
 		map.put(25, "Youth1");
-		
 		for (Map.Entry<Integer, String> entry : map.entrySet()) {
 		    System.out.println("Key = " + entry.getKey() + ", Value = " + entry.getValue());
 		}
@@ -56,7 +51,6 @@ public class IteratingHashMapExamples {
 	public void iteratingUsingIterator(){
 		
 		Map<Integer, String> map = new HashMap<Integer, String>();
-		
 		map.put(18, "Charming");
 		map.put(19, "Young & Charming");
 		map.put(20, "Young");
@@ -75,14 +69,14 @@ public class IteratingHashMapExamples {
 	@Test
 	public void iteratingWithoutGenerics(){
 		
-		Map map = new HashMap();
+		Map<Integer, String> map = new HashMap<Integer, String>();
 		
 		map.put(18, "Charming");
 		map.put(19, "Young & Charming");
 		map.put(20, "Young");
 		map.put(25, "Youth");
 		map.put(25, "Youth1");
-		Iterator entries = map.entrySet().iterator();
+		Iterator<?> entries = map.entrySet().iterator();
 		while (entries.hasNext()) {
 		    Map.Entry entry = (Map.Entry) entries.next();
 		    Integer key = (Integer)entry.getKey();
